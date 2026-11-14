@@ -9,6 +9,6 @@ Why: BoxMC BUG-0696. A hitbox armour stand removed before its first data update 
 (field 9 = Integer interpolation duration) -> client "Network Protocol Error" disconnect near crab,
 pest and turkey models.
 
-Build: `./gradlew :platform:paper:shadowJar` (JDK 25). Deployed under the upstream file name
+Build: `sh ./gradlew :platform:bettermodel-paper:shadowJar` (JDK 25; the 1.21.x paperweight setup runs on JDK 21, see `nms/v1_21_R*/build.gradle.kts`). Output `build/libs/bettermodel-<version>-paper.jar`. Jar 3.5.0-boxmc.1 was built from `5a4337cb`. Deployed under the upstream file name
 `bettermodel-3.5.0-paper.jar` so the server's update folder replaces it; ops manifest `ports/PORTS.tsv`.
 Drop this fork once an upstream release contains #468 (check its changelog first).
